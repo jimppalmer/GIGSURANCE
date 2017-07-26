@@ -1,0 +1,265 @@
+@import "variables";
+@import "mixins";
+@import "reset";
+
+//text styles
+
+body {
+  background-color: $background-color;
+}
+
+*  {
+  color: $text-color;
+  font-family: 'Muli', sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.45em;
+  letter-spacing: .05em;
+
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 1.45em;
+  letter-spacing: .05em;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 1.6em;
+  letter-spacing: .05em;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.45em;
+  letter-spacing: .05em;
+}
+
+.fa-check {
+  letter-spacing: .6em;
+}
+
+//elements
+
+.navbar{
+  h1 {
+    font-weight: 700;
+    letter-spacing: .5em;
+    font-size: 24px;
+  }
+}
+
+.jumbotron-fluid  {
+  background-image: url(../img/hero-xs.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 25em;
+  padding-top: 10em;
+
+    h1 {
+      font-size: 2.25em;
+      font-weight: 300;
+      letter-spacing: 3px;
+      line-height: 1.16em;
+    }
+    p {
+      font-weight: 200;
+      font-size: 16px;
+      letter-spacing: 1px;
+      line-height: 1.6em;
+      display: block;    }
+}
+
+.navbar {
+  background: $background-color;
+}
+
+.intro {
+  text-align: center;
+  max-width: 35.12em;
+  margin: 3em auto;
+}
+
+.relax-block {
+    @include feature-block;
+  }
+
+.relax-block-image {
+  background-image: url(../img/peace-xs.jpg);
+  @include feature-block-image;
+}
+
+.relax-block-text {
+  @include feature-block-text;
+}
+
+.steps-block {
+  @include feature-block;
+}
+
+.steps-block-image {
+  background-image: url(../img/steps-xs.jpg);
+  @include feature-block-image;
+}
+
+.steps-block-text {
+  @include feature-block-text;
+}
+
+.disclaimer {
+  text-align: center;
+  padding: 0 3em;
+  margin: 0em 1em 3em 1em;
+  p {
+    display: block;
+  }
+}
+
+.price-block {
+  text-align: center;
+  margin: 0em 3em 1em 3em;
+}
+
+.pricing-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-card {
+  width:21em;
+  align-items: center;
+  text-align: center;
+  background-color: $highlight-color;
+  color: $background-color;
+  flex: 1 1;
+  //flex-basis: 25em;
+  margin-top: 1em;
+  padding: 1.6em 0;
+}
+
+.price {
+  background-color: $text-color;
+  text-align: center;
+  color: $background-color;
+  padding: 1em 2em;
+}
+.price-info {
+  display: block;
+  color: $background-color;
+}
+
+.price-detail {
+  display: flex;
+  flex-direction: column;
+    p {
+      font-size: 18px;
+      color: $background-color;
+      line-height: 3em;
+    }
+    ul li {
+      color: $background-color;
+      text-align: left;
+      list-style: none;
+      margin-top: 1em;
+      padding: 0;
+    }
+}
+
+.price-highlight {
+  color: $background-color;
+  font-size: 32px;
+}
+
+.end-button {
+  text-align: center;
+  margin: 2em auto;
+  flex: none;
+}
+
+
+//media points
+
+@include media-sm {
+    .jumbotron-fluid {
+      background-image: url(../img/hero-sm.jpg);
+      min-height: 25em;
+      padding-top: 10em;
+    }
+    .relax-block-image {
+      background-image: url(../img/relax-sm.jpg);
+      }
+      .steps-block-image {
+        background-image: url(../img/steps-sm.jpg);
+      }
+    }
+
+
+@include media-md {
+  .jumbotron-fluid {
+    background-image: url(../img/hero-md.jpg);
+    min-height: 25em;
+    padding-top: 10em;
+  }
+  .relax-block {
+    flex-direction: row;
+  }
+  .relax-block-image {
+    background-image: url(../img/relax-md.jpg);
+    }
+  .relax-block-text {
+    @include feature-block-text-md-up;
+  }
+  .steps-block {
+    flex-direction: row;
+  }
+  .steps-block-image {
+    background-image: url(../img/steps-md.jpg);
+    order: 2;
+  }
+  .steps-block-text {
+    @include feature-block-text-md-up;
+  }
+
+
+@include media-lg {
+  .jumbotron-fluid {
+    background-image: url(../img/hero-lg.jpg);
+    padding-top: 10em;
+    min-height: 25em;
+  }
+  .relax-block-image {
+    background-image: url(../img/relax-lg.jpg);
+    }
+  .steps-block-image {
+    background-image: url(../img/steps-lg.jpg);
+  }
+  .pricing-cards-wrapper {
+    flex-direction: row;
+    align-items: stretch;
+    flex: 1 1 auto;
+  }
+  .pricing-card {
+    margin: 1em .5em;
+  }
+}
+
+}
+
+@include media-xl {
+  .jumbotron-fluid{
+    background-image: url(../img/hero-lg.jpg);
+    min-height: 25em;
+    padding-top: 10em;
+  }
+  .relax-block-image {
+    background-image: url(../img/relax-lg.jpg);
+    }
+}

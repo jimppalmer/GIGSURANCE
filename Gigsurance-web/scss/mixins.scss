@@ -1,0 +1,62 @@
+@import "variables";
+
+@mixin media-sm{
+  @media (min-width: 576px) {@content};
+}
+
+@mixin media-md {
+  @media (min-width: 768px) {@content};
+}
+
+@mixin media-lg {
+  @media (min-width: 992px) {@content};
+}
+
+@mixin media-xl {
+  @media (min-width: 1200px) {@content};
+}
+
+
+@mixin feature-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3em 3em 3em;
+}
+
+@mixin feature-block-image{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 17em;
+  width: 100%;
+  flex: 1 1;
+}
+
+@mixin feature-block-text {
+  text-align: center;
+  flex: 1 1;
+  
+
+  ul {
+    display: block;
+    text-align: left;
+    list-style-type: decimal;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.6em;
+    padding: 0;
+
+  }
+}
+
+@mixin feature-block-text-md-up {
+  text-align: left;
+  margin-left: 1em;
+  h6{
+    font-size: 18px;
+    line-height: 1.6em;
+    letter-spacing: .05em;
+  }
+
+}

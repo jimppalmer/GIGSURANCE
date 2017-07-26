@@ -1,0 +1,313 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 62em;
+}
+
+body {
+  background-color: #0E153E;
+}
+
+* {
+  color: #0DE5A8;
+  font-family: 'Muli', sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.45em;
+  letter-spacing: .05em;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 1.45em;
+  letter-spacing: .05em;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 1.6em;
+  letter-spacing: .05em;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.45em;
+  letter-spacing: .05em;
+}
+
+.fa-check {
+  letter-spacing: .6em;
+}
+
+.navbar h1 {
+  font-weight: 700;
+  letter-spacing: .5em;
+  font-size: 24px;
+}
+
+.jumbotron-fluid {
+  background-image: url(../img/hero-xs.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 25em;
+  padding-top: 10em;
+}
+.jumbotron-fluid h1 {
+  font-size: 2.25em;
+  font-weight: 300;
+  letter-spacing: 3px;
+  line-height: 1.16em;
+}
+.jumbotron-fluid p {
+  font-weight: 200;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+  display: block;
+}
+
+.navbar {
+  background: #0E153E;
+}
+
+.intro {
+  text-align: center;
+  max-width: 35.12em;
+  margin: 3em auto;
+}
+
+.relax-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3em 3em 3em;
+}
+
+.relax-block-image {
+  background-image: url(../img/peace-xs.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 17em;
+  width: 100%;
+  flex: 1 1;
+}
+
+.relax-block-text {
+  text-align: center;
+  flex: 1 1;
+}
+.relax-block-text ul {
+  display: block;
+  text-align: left;
+  list-style-type: decimal;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.6em;
+  padding: 0;
+}
+
+.steps-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3em 3em 3em;
+}
+
+.steps-block-image {
+  background-image: url(../img/steps-xs.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 17em;
+  width: 100%;
+  flex: 1 1;
+}
+
+.steps-block-text {
+  text-align: center;
+  flex: 1 1;
+}
+.steps-block-text ul {
+  display: block;
+  text-align: left;
+  list-style-type: decimal;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 1.6em;
+  padding: 0;
+}
+
+.disclaimer {
+  text-align: center;
+  padding: 0 3em;
+  margin: 0em 1em 3em 1em;
+}
+.disclaimer p {
+  display: block;
+}
+
+.price-block {
+  text-align: center;
+  margin: 0em 3em 1em 3em;
+}
+
+.pricing-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing-card {
+  width: 21em;
+  align-items: center;
+  text-align: center;
+  background-color: #D8D8D8;
+  color: #0E153E;
+  flex: 1 1;
+  margin-top: 1em;
+  padding: 1.6em 0;
+}
+
+.price {
+  background-color: #0DE5A8;
+  text-align: center;
+  color: #0E153E;
+  padding: 1em 2em;
+}
+
+.price-info {
+  display: block;
+  color: #0E153E;
+}
+
+.price-detail {
+  display: flex;
+  flex-direction: column;
+}
+.price-detail p {
+  font-size: 18px;
+  color: #0E153E;
+  line-height: 3em;
+}
+.price-detail ul li {
+  color: #0E153E;
+  text-align: left;
+  list-style: none;
+  margin-top: 1em;
+  padding: 0;
+}
+
+.price-highlight {
+  color: #0E153E;
+  font-size: 32px;
+}
+
+.end-button {
+  text-align: center;
+  margin: 2em auto;
+  flex: none;
+}
+
+@media (min-width: 576px) {
+  .jumbotron-fluid {
+    background-image: url(../img/hero-sm.jpg);
+    min-height: 25em;
+    padding-top: 10em;
+  }
+
+  .relax-block-image {
+    background-image: url(../img/relax-sm.jpg);
+  }
+
+  .steps-block-image {
+    background-image: url(../img/steps-sm.jpg);
+  }
+}
+@media (min-width: 768px) {
+  .jumbotron-fluid {
+    background-image: url(../img/hero-md.jpg);
+    min-height: 25em;
+    padding-top: 10em;
+  }
+
+  .relax-block {
+    flex-direction: row;
+  }
+
+  .relax-block-image {
+    background-image: url(../img/relax-md.jpg);
+  }
+
+  .relax-block-text {
+    text-align: left;
+    margin-left: 1em;
+  }
+  .relax-block-text h6 {
+    font-size: 18px;
+    line-height: 1.6em;
+    letter-spacing: .05em;
+  }
+
+  .steps-block {
+    flex-direction: row;
+  }
+
+  .steps-block-image {
+    background-image: url(../img/steps-md.jpg);
+    order: 2;
+  }
+
+  .steps-block-text {
+    text-align: left;
+    margin-left: 1em;
+  }
+  .steps-block-text h6 {
+    font-size: 18px;
+    line-height: 1.6em;
+    letter-spacing: .05em;
+  }
+}
+@media (min-width: 768px) and (min-width: 992px) {
+  .jumbotron-fluid {
+    background-image: url(../img/hero-lg.jpg);
+    padding-top: 10em;
+    min-height: 25em;
+  }
+
+  .relax-block-image {
+    background-image: url(../img/relax-lg.jpg);
+  }
+
+  .steps-block-image {
+    background-image: url(../img/steps-lg.jpg);
+  }
+
+  .pricing-cards-wrapper {
+    flex-direction: row;
+    align-items: stretch;
+    flex: 1 1 auto;
+  }
+
+  .pricing-card {
+    margin: 1em .5em;
+  }
+}
+@media (min-width: 1200px) {
+  .jumbotron-fluid {
+    background-image: url(../img/hero-lg.jpg);
+    min-height: 25em;
+    padding-top: 10em;
+  }
+
+  .relax-block-image {
+    background-image: url(../img/relax-lg.jpg);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
